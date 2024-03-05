@@ -1,4 +1,4 @@
-// 
+// move out or keep. create map
 if ("geolocation" in navigator) {
     navigator.geolocation.getCurrentPosition(function(position){
         var map = L.map('map').setView([position.coords.latitude, position.coords.longitude], 13);
