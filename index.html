@@ -14,10 +14,42 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
      crossorigin=""></script>
-     
 </head>
 <body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Project 1 API</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li>
+                <a href="#world-map">World Map</a>
+            </li>
+            <li>
+                <a href="#radio-browser">Radio Browser</a>
+            </li>
+            <li>
+                <a href="#music-player">Music Player</a>
+            </li>
+        </ul>
+        </div>
+      </nav>
+    
+    <!-- Map -->
     <div id="map"></div>
+
+    <!-- Search Bar-->
+    <nav>
+        <div class="nav-wrapper">
+          <form>
+            <div class="input-field">
+              <input id="search" type="search" required>
+              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+        </div>
+      </nav>
+
 </body>
 <script src="script.js"></script>
 </html>
