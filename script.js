@@ -127,8 +127,8 @@ function playAudio(audio_url) {
 }
 
 function deleteSearchtext () {
-    var labels = document.querySelectorAll('.materialIcons');
-            labels.forEach(function(materialIcons) {
-                materialIcons.textContent = '';
+    var labels = document.querySelectorAll('.labelIcons');
+            labels.forEach(function(labelIcons) {
+                labelIcons.textContent = '';
 });
 }
