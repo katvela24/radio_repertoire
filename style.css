@@ -22,3 +22,8 @@ header nav ul  {
 }
 
 #map { height: 500px; }
+
+.icon {
+    width: 24px; /* Adjust the width as needed */
+    height: 24px; /* Adjust the height as needed */
+}
