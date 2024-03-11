@@ -125,3 +125,10 @@ function playAudio(audio_url) {
   currentAudio = new Audio(audio_url);
   currentAudio.play();
 }
+
+function deleteSearchtext () {
+    var labels = document.querySelectorAll('.materialIcons');
+            labels.forEach(function(materialIcons) {
+                materialIcons.textContent = '';
+});
+}
