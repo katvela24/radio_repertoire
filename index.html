@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Radio Player</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
     crossorigin=""/>
@@ -14,10 +14,61 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
      crossorigin=""></script>
+     <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+     <script src="script.js"></script>
      
+<link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
 </head>
 <body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Project 1 API</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li>
+                <a href="#world-map">World Map</a>
+            </li>
+            <li>
+                <a href="#radio-browser">Radio Browser</a>
+            </li>
+            <li>
+                <a href="#music-player">Music Player</a>
+            </li>
+        </ul>
+        </div>
+      </nav>
+    
+    <!-- Map -->
     <div id="map"></div>
+
+    <!-- Search Bar-->
+    <nav>
+        <div class="nav-wrapper">
+          <form>
+            <div class="input-field">
+              <input id="search" type="search" required>
+              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+        </div>
+    </nav>
+
+    <!--Radio Table-->
+    <div>Current Country: <span id="countryCode"></span></div>
+    <table id="stationList">
+      <thead>
+          <tr>
+              <th>Name</th>
+              <th>Click Count</th>
+              <th>Language</th>
+              <th>Home Page</th>
+              <th>Play</th>
+          </tr>
+      </thead>
+      <tbody id="stationListBody">
+          <!-- Stations will be added here -->
+      </tbody>
+  </table>
 </body>
-<script src="script.js"></script>
 </html>
